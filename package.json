@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "start": "PORT=8080 node ./bin/www",
-        "webpack": "webpack --config=src/webpack.config.js --mode development",
+        "webpack": "webpack --config=./src/webpack.config.js --mode development",
         "watch": "onchange 'src/**/*.js' 'src/**/*.sass' -- npm run webpack "
     },
     "dependencies": {

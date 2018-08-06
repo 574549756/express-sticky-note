@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var b = __webpack_require__(/*! ../mod/b.js */ \"./src/javascripts/mod/b.js\")\n\nconsole.log(obj)\n\n\n//# sourceURL=webpack:///./src/javascripts/app/index.js?");
+eval("var b = __webpack_require__(/*! ../mod/b.js */ \"./src/javascripts/mod/b.js\")\nvar Toast = __webpack_require__(/*! ../mod/toast.js */ \"./src/javascripts/mod/toast.js\").Toast\n\nconsole.log(obj)\n\n\n//# sourceURL=webpack:///./src/javascripts/app/index.js?");
 
 /***/ }),
 
@@ -116,6 +116,17 @@ eval("module.exports.a = 'bbbbbb'\n\nmodule.exports = {\n    b: 'bbbbbb',\n    a
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("var a = __webpack_require__(/*! ./a.js */ \"./src/javascripts/mod/a.js\").a\n\n\n//# sourceURL=webpack:///./src/javascripts/mod/b.js?");
+
+/***/ }),
+
+/***/ "./src/javascripts/mod/toast.js":
+/*!**************************************!*\
+  !*** ./src/javascripts/mod/toast.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("function toast(msg, time) {\n    this.msg = msgthis.dismissTime = time || 1000\n    this.createToast()\n    this.showToast()\n}\ntoast.prototype = {\n    createToast: function() {\n        var tpl = '<div class=\"toast\">' + this.msg + '</div>'\n        this.$toast = $(tpl)\n        $('body').append(this.$toast)\n    },\n    showToast: function() {\n        var self = this\n        this.$toast.fadeIn(300, function() {\n            setTimeout(function() {\n                self.$toast.fadeOut(300, function() {\n                    self.$toast.remove()\n                })\n            }, self.dismissTime)\n        })\n    }\n}\n\nfunction Toast(msg, time) {\n    return new toast(msg, time)\n}\n\nwindow.Toast = Toast\nmodule.exports.Toast = Toast\n\nconsole.log('toastAlreadyDone')\n\n\n//# sourceURL=webpack:///./src/javascripts/mod/toast.js?");
 
 /***/ })
 
