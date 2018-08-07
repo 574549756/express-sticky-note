@@ -1,5 +1,9 @@
+//var $ = require('jquery')
+require('less/toast.less')
+
 function toast(msg, time) {
-    this.msg = msgthis.dismissTime = time || 1000
+    this.msg = msg
+    this.dismissTime = time || 1000
     this.createToast()
     this.showToast()
 }
@@ -27,5 +31,3 @@ function Toast(msg, time) {
 
 window.Toast = Toast
 module.exports.Toast = Toast
-
-console.log('toastAlreadyDone')
