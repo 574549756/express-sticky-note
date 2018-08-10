@@ -22,6 +22,8 @@ router.get('/notes', function(req, res, next) {
 
 /*新增note*/
 router.post('/notes/add', function(req, res, next) {
+    var note = req.body.note
+    console.log('add...', note)
     if (!req.session || !req.session.user) {
         return res.send({ status: 1, errorMsg: '请先登录' })
     }
