@@ -3,10 +3,15 @@ var express = require('express')
 var path = require('path')
 var cookieParser = require('cookie-parser')
 var logger = require('morgan')
+var cookieParser = require('cookie0parser')
+var bodyParser = require('body-parser')
+var passport = require('express-session')
+var session = require('express-session')
 
 var indexRouter = require('./routes/index')
 var usersRouter = require('./routes/users')
 var api = require('./routes/api')
+var auth = require('./routes/auth')
 
 var app = express()
 
@@ -20,6 +25,10 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
+app.use(session({ secret: 'phenomenonProphet' }))
+app.use(passport.initialize())
+app.use(passport.session())
+
 app.use('/stylesheets/style.html', function(req, res) {
     console.log('get style.css!!!!')
     res.send('get style.css!!!!!!')
@@ -29,6 +38,7 @@ app.use('/student', function(res, res, next) {
 })
 app.use('/', indexRouter)
 app.use('/users', usersRouter)
+app.use('/auth', auth)
 app.use('/api', api) //ajax 接口
 
 // catch 404 and forward to error handler
