@@ -1,47 +1,47 @@
 {
-  "name": "express-sticky-note",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "PORT=8080 node ./bin/www",
-    "webpack": "webpack --config=./src/webpack.config.js --mode development",
-    "watch": "onchange 'src/**/*.js' 'src/**/*.sass' -- npm run webpack "
-  },
-  "dependencies": {
-    "autoprefixer": "^9.1.0",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.9",
-    "ejs": "~2.5.7",
-    "express": "^4.16.3",
-    "express-session": "^1.15.6",
-    "http-errors": "~1.6.2",
-    "morgan": "~1.9.0",
-    "passport": "^0.4.0",
-    "passport-github": "^1.1.0",
-    "postcss-loader": "^2.1.6",
-    "sequelize": "^3.30.2",
-    "sqlite3": "^4.0.2",
-    "webpack-cli": "^3.1.0"
-  },
-  "devDependencies": {
-    "css-loader": "^1.0.0",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "less": "^3.8.0",
-    "less-loader": "^4.1.0",
-    "onchange": "^4.1.0",
-    "style-loader": "^0.22.0",
-    "webpack": "^4.16.5"
-  },
-  "description": "",
-  "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/574549756/express-sticky-note.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/574549756/express-sticky-note/issues"
-  },
-  "homepage": "https://github.com/574549756/express-sticky-note#readme"
+    "name": "express-sticky-note",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "PORT=8080 node ./bin/www",
+        "webpack": "webpack --config=./src/webpack.config.js --mode development",
+        "watch": "onchange 'src/**/*.js' 'src/**/*.less' -- npm run webpack"
+    },
+    "dependencies": {
+        "autoprefixer": "^9.1.0",
+        "cookie-parser": "~1.4.3",
+        "debug": "~2.6.9",
+        "ejs": "~2.5.7",
+        "express": "^4.16.3",
+        "express-session": "^1.15.6",
+        "http-errors": "~1.6.2",
+        "morgan": "~1.9.0",
+        "passport": "^0.4.0",
+        "passport-github": "^1.1.0",
+        "postcss-loader": "^2.1.6",
+        "sequelize": "^3.30.2",
+        "sqlite3": "^4.0.2",
+        "webpack-cli": "^3.1.0"
+    },
+    "devDependencies": {
+        "css-loader": "^1.0.0",
+        "extract-text-webpack-plugin": "^4.0.0-beta.0",
+        "less": "^3.8.0",
+        "less-loader": "^4.1.0",
+        "onchange": "^4.1.0",
+        "style-loader": "^0.22.0",
+        "webpack": "^4.16.5"
+    },
+    "description": "",
+    "main": "app.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/574549756/express-sticky-note.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/574549756/express-sticky-note/issues"
+    },
+    "homepage": "https://github.com/574549756/express-sticky-note#readme"
 }
