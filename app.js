@@ -1,6 +1,7 @@
 var createError = require('http-errors')
 var express = require('express')
 var path = require('path')
+var favicon = require('serve-favicon')
 var cookieParser = require('cookie-parser')
 var logger = require('morgan')
 var bodyParser = require('body-parser')
@@ -24,7 +25,7 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use(session({ secret: 'phenomenonProphet' }))
+app.use(session({ secret: 'phenomenonprophet' }))
 app.use(passport.initialize())
 app.use(passport.session())
 
