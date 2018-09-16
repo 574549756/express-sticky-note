@@ -16,7 +16,7 @@ passport.deserializeUser(function(id, done) {
 
 /* GET auth . */
 passport.use(
-    new GitHubStrategy(
+    new GitHubStrategy(hjuyyy
         {
             clientID: '72bbcb4c0efaa7c35e81',
             clientSecret: '8a0cf8d9a90642cba3463f8a5c0955047c79de48',
