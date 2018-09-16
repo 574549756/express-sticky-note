@@ -18,8 +18,8 @@ passport.deserializeUser(function(id, done) {
 passport.use(
     new GitHubStrategy(
         {
-            clientID: 'b7bfd7fcc56fdb76ad7f',
-            clientSecret: 'acbbfd5555ded60add3c1069a75d5fd32301b621',
+            clientID: '72bbcb4c0efaa7c35e81',
+            clientSecret: '8a0cf8d9a90642cba3463f8a5c0955047c79de48',
             callbackURL: 'http://post.hunger-valley.com/auth/github/callback'
         },
         function(accessToken, refreshToken, profile, cb) {
