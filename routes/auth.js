@@ -9,7 +9,7 @@ passport.serializeUser(function(user, done) {
     done(null, user)
 })
 
-passport.deserializeUser(function(id, done) {
+passport.deserializeUser(function(obj, done) {
     console.log('---deserializeUser---')
     done(null, obj)
 })
@@ -22,10 +22,11 @@ passport.use(
             clientSecret: '8a0cf8d9a90642cba3463f8a5c0955047c79de48',
             callbackURL: 'http://sticky-note.zealot.fun/auth/github/callback'
         },
-        function(accessToken, refreshToken, profile, cb) {
+        function(accessToken, refreshToken, profile, done) {
             /* User.findOrCreate({ githubId: profile.id }, function(err, user) {
                 return cb(err, user)
             }) */
+            done(null, profile)
         }
     )
 )
@@ -47,7 +48,7 @@ router.get(
             avatar: req.user._json.avatar_url,
             provider: req.user.provider
         }
-        res.redirect('/')
+        res.redirect('http://sticky-note.zealot.fun')
     }
 )
 
