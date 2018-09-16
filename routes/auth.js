@@ -20,7 +20,7 @@ passport.use(
         {
             clientID: '72bbcb4c0efaa7c35e81',
             clientSecret: '8a0cf8d9a90642cba3463f8a5c0955047c79de48',
-            callbackURL: 'http://post.hunger-valley.com/auth/github/callback'
+            callbackURL: 'http://sticky-note.zealot.fun/auth/github/callback'
         },
         function(accessToken, refreshToken, profile, cb) {
             /* User.findOrCreate({ githubId: profile.id }, function(err, user) {
