@@ -1,105 +1,3 @@
-.note {
-  position: absolute;
-  color: #333;
-  width: 180px;
-  margin: 20px 10px;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.note .note-head {
-  height: 25px;
-  background-color: #ea9b35;
-  cursor: move;
-  font-size: 12px;
-  line-height: 20px;
-  padding-left: 10px;
-  color: #666;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-}
-.note .note-head:hover .delete {
-  opacity: 1;
-}
-.note .note-head:before {
-  position: absolute;
-  left: 50%;
-  top: -11px;
-  margin-left: -32px;
-  content: ' ';
-  display: block;
-  width: 64px;
-  height: 18px;
-  background: #35bba3;
-}
-.note .note-head:after {
-  position: absolute;
-  left: 50%;
-  margin-left: 32px;
-  top: -11px;
-  z-index: -1;
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  border-left: 5px solid #299683;
-  border-top: 18px solid transparent;
-}
-.note .note-ct {
-  padding: 10px;
-  background-color: #efb04e;
-  outline: none;
-  font-size: 15px;
-}
-.note .delete {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  top: 4px;
-  right: 4px;
-  height: 16px;
-  width: 16px;
-  border-radius: 8px;
-  background: #1e1e1e;
-  cursor: pointer;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-.note .delete svg {
-  fill: #fff;
-  height: 16px;
-  width: 16px;
-}
-.draggable {
-  opacity: 0.8;
-  cursor: move;
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-.toast {
-  position: fixed;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: 20px;
-  color: #D15A39;
-  background: #fff;
-  padding: 5px 10px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
-  box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
-  display: none;
-}
 html,
 body {
   margin: 0;
@@ -219,4 +117,106 @@ a {
   z-index: -1;
   -webkit-animation: move-twink-back 200s linear infinite;
   animation: move-twink-back 200s linear infinite;
+}
+.toast {
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 20px;
+  color: #D15A39;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
+  display: none;
+}
+.note {
+  position: absolute;
+  color: #333;
+  width: 180px;
+  margin: 20px 10px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.note .note-head {
+  height: 25px;
+  background-color: #ea9b35;
+  cursor: move;
+  font-size: 12px;
+  line-height: 20px;
+  padding-left: 10px;
+  color: #666;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+.note .note-head:hover .delete {
+  opacity: 1;
+}
+.note .note-head:before {
+  position: absolute;
+  left: 50%;
+  top: -11px;
+  margin-left: -32px;
+  content: ' ';
+  display: block;
+  width: 64px;
+  height: 18px;
+  background: #35bba3;
+}
+.note .note-head:after {
+  position: absolute;
+  left: 50%;
+  margin-left: 32px;
+  top: -11px;
+  z-index: -1;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid #299683;
+  border-top: 18px solid transparent;
+}
+.note .note-ct {
+  padding: 10px;
+  background-color: #efb04e;
+  outline: none;
+  font-size: 15px;
+}
+.note .delete {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 4px;
+  right: 4px;
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background: #1e1e1e;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.note .delete svg {
+  fill: #fff;
+  height: 16px;
+  width: 16px;
+}
+.draggable {
+  opacity: 0.8;
+  cursor: move;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
 }
