@@ -16,15 +16,22 @@ a {
   text-decoration: none;
   color: #fff;
 }
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
 #header {
-  height: 30px;
-  font-size: 12px;
+  height: 40px;
+  font-size: 16px;
   background: #1e1e1e;
 }
 #header a {
   display: block;
-  font-size: 12px;
-  margin-top: 6px;
+  font-size: 16px;
+  margin-top: 8px;
 }
 #header .user-area {
   padding-right: 16px;
@@ -52,9 +59,10 @@ a {
 #header .add-note {
   float: left;
   margin-left: 16px;
-  border: 1px solid #fff;
-  border-radius: 4px;
-  padding: 2px 4px;
+}
+#header .add-note svg {
+  height: 25px;
+  width: 25px;
 }
 #header .login {
   float: right;
@@ -92,11 +100,20 @@ a {
   display: block;
 }
 .stars {
-  background: #000 url(http://7xpvnv.com2.z0.glb.qiniucdn.com/ba25c630-1c91-4ac1-a3de-65555d78c147.png) repeat top center;
+  background: #000 url(http://pbr03em7c.bkt.clouddn.com/Rose2kTiny.jpg) no-repeat top center;
   z-index: -2;
 }
+.stars::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  background: rgba(0, 0, 0, 0.5);
+}
 .twinkling {
-  background: transparent url(http://7xpvnv.com2.z0.glb.qiniucdn.com/493b97e6-c499-4b41-a26b-8942873615b0.png) repeat top center;
+  background: transparent url(http://pbr03em7c.bkt.clouddn.com/Rose2kTiny.jpg) no-repeat top center;
   z-index: -1;
   -webkit-animation: move-twink-back 200s linear infinite;
   animation: move-twink-back 200s linear infinite;

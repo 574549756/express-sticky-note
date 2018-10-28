@@ -21,7 +21,7 @@
         "postcss-loader": "^2.1.6",
         "sequelize": "^3.30.2",
         "serve-favicon": "^2.5.0",
-        "sqlite3": "^4.0.2",
+        "sqlite3": "^4.0.3",
         "webpack-cli": "^3.1.0"
     },
     "devDependencies": {
