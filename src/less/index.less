@@ -86,7 +86,7 @@ a {
     position: relative;
     height: -webkit-calc(100% - 40px);
     height: calc(100% - 40px);
-    padding:0 6px;
+    padding:0 6px;    
 }
 
 @keyframes move-twink-back {
@@ -108,6 +108,19 @@ a {
     width: 100%;
     height: 100%;
     display: block;
+    .logo{
+        position: absolute;
+        right:5px;
+        bottom:10px;
+        display: flex;
+        svg{
+            fill:white;
+            opacity:0.5;
+            height:70px;
+            width:70px;
+            z-index:-1;
+        }
+    }
 }
 
 .stars {
