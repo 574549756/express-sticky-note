@@ -1,3 +1,18 @@
+.toast {
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 20px;
+  color: #D15A39;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
+  display: none;
+}
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -151,7 +166,7 @@ a {
 .note {
   position: absolute;
   color: #333;
-  width: 170px;
+  width: 160px;
   margin: 20px 16px;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -236,19 +251,4 @@ a {
   -webkit-transition: none;
   -o-transition: none;
   transition: none;
-}
-.toast {
-  position: fixed;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: 20px;
-  color: #D15A39;
-  background: #fff;
-  padding: 5px 10px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
-  box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
-  display: none;
 }
