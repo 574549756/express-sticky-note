@@ -148,6 +148,21 @@ a {
   -webkit-animation: move-twink-back 200s linear infinite;
   animation: move-twink-back 200s linear infinite;
 }
+.toast {
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 20px;
+  color: #D15A39;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
+  display: none;
+}
 .note {
   position: absolute;
   color: #333;
@@ -159,7 +174,7 @@ a {
 }
 @media (max-width: 380px) {
   .note {
-    width: 155px;
+    width: 153px;
   }
 }
 .note .note-head {
@@ -241,19 +256,4 @@ a {
   -webkit-transition: none;
   -o-transition: none;
   transition: none;
-}
-.toast {
-  position: fixed;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: 20px;
-  color: #D15A39;
-  background: #fff;
-  padding: 5px 10px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
-  box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
-  display: none;
 }
