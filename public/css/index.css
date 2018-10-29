@@ -39,6 +39,8 @@ a {
   height: 40px;
   font-size: 16px;
   background: #1e1e1e;
+  -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
 }
 #header a {
   display: block;
