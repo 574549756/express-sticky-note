@@ -59,8 +59,7 @@ router.post('/notes/edit', function(req, res, next) {
             res.send({ status: 0 })
         })
         .catch(function(e) {
-            res.send({ status: 1, errorMsg: '数据库异常或者你没有权限' })
-            res.send({e})
+            res.send({ status: 1, errorMsg: e })
         })
 })
 
