@@ -70,7 +70,7 @@ a {
 }
 #content {
   position: relative;
-  height: calc(100% - 30px);
+  height: calc(100% - 40px);
 }
 @-webkit-keyframes move-twink-back {
   from {
@@ -117,21 +117,6 @@ a {
   z-index: -1;
   -webkit-animation: move-twink-back 200s linear infinite;
   animation: move-twink-back 200s linear infinite;
-}
-.toast {
-  position: fixed;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: 20px;
-  color: #D15A39;
-  background: #fff;
-  padding: 5px 10px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
-  box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
-  display: none;
 }
 .note {
   position: absolute;
@@ -219,4 +204,19 @@ a {
   -webkit-transition: none;
   -o-transition: none;
   transition: none;
+}
+.toast {
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 20px;
+  color: #D15A39;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
+  display: none;
 }
