@@ -22,7 +22,7 @@ li {
   list-style: none;
 }
 body {
-  font: 14px/1.4 'Arial';
+  font: 14px/1.4 "Arial";
 }
 a {
   text-decoration: none;
@@ -141,7 +141,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  content: '';
+  content: "";
   background: rgba(0, 0, 0, 0.5);
 }
 .twinkling {
@@ -149,21 +149,6 @@ a {
   z-index: -1;
   -webkit-animation: move-twink-back 200s linear infinite;
   animation: move-twink-back 200s linear infinite;
-}
-.toast {
-  position: fixed;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: 20px;
-  color: #D15A39;
-  background: #fff;
-  padding: 5px 10px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
-  box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
-  display: none;
 }
 .note {
   position: absolute;
@@ -189,6 +174,24 @@ a {
   color: #666;
   border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 }
+.note .note-head.color-1-1 {
+  background-color: #ea9b35;
+}
+.note .note-head.color-2-1 {
+  background-color: #dd598b;
+}
+.note .note-head.color-3-1 {
+  background-color: #eee34b;
+}
+.note .note-head.color-4-1 {
+  background-color: #c24226;
+}
+.note .note-head.color-5-1 {
+  background-color: #c1c341;
+}
+.note .note-head.color-6-1 {
+  background-color: #3f78c3;
+}
 .note .note-head:hover .delete {
   opacity: 1;
 }
@@ -197,7 +200,7 @@ a {
   left: 50%;
   top: -11px;
   margin-left: -32px;
-  content: ' ';
+  content: " ";
   display: block;
   width: 64px;
   height: 18px;
@@ -209,7 +212,7 @@ a {
   margin-left: 32px;
   top: -11px;
   z-index: -1;
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 0;
@@ -223,6 +226,24 @@ a {
   font-size: 15px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+.note .note-ct.color-1-2 {
+  background-color: #efb04e;
+}
+.note .note-ct.color-2-2 {
+  background-color: #e672a2;
+}
+.note .note-ct.color-3-2 {
+  background-color: #f2eb67;
+}
+.note .note-ct.color-4-2 {
+  background-color: #d15a39;
+}
+.note .note-ct.color-5-2 {
+  background-color: #d0d25c;
+}
+.note .note-ct.color-6-2 {
+  background-color: #5591d2;
 }
 .note .delete {
   position: absolute;
@@ -258,4 +279,19 @@ a {
   -webkit-transition: none;
   -o-transition: none;
   transition: none;
+}
+.toast {
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 20px;
+  color: #D15A39;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.6);
+  display: none;
 }
