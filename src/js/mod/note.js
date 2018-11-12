@@ -84,9 +84,8 @@ Note.prototype = {
 					self.setLayout()
 					if (self.id) {
 						self.edit($noteCt.text())
-						console.log($noteCt)
 					} else {
-						self.add($noteCt.html())
+						self.add($noteCt.text())
 					}
 				}
 			})
