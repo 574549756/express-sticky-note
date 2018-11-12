@@ -83,7 +83,8 @@ Note.prototype = {
 					$noteCt.data("before", $noteCt.html())
 					self.setLayout()
 					if (self.id) {
-						self.edit($noteCt.html())
+						self.edit($noteCt.text())
+						console.log($noteCt)
 					} else {
 						self.add($noteCt.html())
 					}
